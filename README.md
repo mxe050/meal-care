@@ -1,11 +1,35 @@
-<div align="center">
+# 食事介助スキル評価アプリ (Core 10 & 15のポイント)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+動画を見ながら、食事介助のスキルを「Core 10」に基づいて評価するウェブアプリケーションです。
+評価完了後には、「15のポイント」を交えた詳細な解説を確認できます。
 
-  <h1>Built with AI Studio</h2>
+## GitHub Pagesでの公開方法
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+このプロジェクトはViteを使用しており、GitHub Pagesで簡単に公開できます。
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **動画ファイルの配置**:
+   `public` フォルダ内に、以下の名前で評価用の動画ファイル（mp4形式）を配置してください。
+   - `ng1.mp4`
+   - `ng2.mp4`
+   - `ng3.mp4`
+   - `ng4.mp4`
 
-</div>
+2. **リポジトリの作成とプッシュ**:
+   GitHubに新しいリポジトリを作成し、このコードをプッシュします。
+
+3. **GitHub Pagesの設定**:
+   リポジトリの `Settings` > `Pages` から、デプロイ元を `GitHub Actions` または `gh-pages` ブランチに設定します。
+   （Viteのビルド設定 `vite.config.ts` に `base: './'` を追加済みですので、サブディレクトリでの公開にも対応しています）
+
+## 開発環境の起動
+
+```bash
+npm install
+npm run dev
+```
+
+## ビルド
+
+```bash
+npm run build
+```
